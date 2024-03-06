@@ -1,0 +1,42 @@
+:root {
+    /* https://coolors.co/2c6b72-2d3142-ef8354-f2dc5d-70ae6e-009ddc-6761a8 */
+    --color-ming: #2c6b72;
+    --color-space-cadet: #2d3142;
+    --color-mandarin: #ef8354;
+    --color-minion-yellow: #f2dc5d;
+    --color-bud-green: #70ae6e;
+    --color-carolina-blue: #009ddc;
+    --color-dark-blue-gray: #6761a8;
+
+    --color-heading: var(--color-ming);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--color-heading);
+    font-family: var(--font-header);
+    letter-spacing: unset;
+    font-weight: 500;
+
+    & strong,
+    &:has(small) {
+        font-family: var(--font-header-highlight);
+        color: var(--color-highlight-heading);
+    }
+
+    & small {
+        font-weight: normal;
+        font-size: 0.95rem;
+        display: block;
+        color: var(--color-foreground);
+        line-height: 0em;
+        font-family: var(--font-body);
+        position: relative;
+        z-index: 1;
+        margin-left: -0.5em;
+    }
+}
