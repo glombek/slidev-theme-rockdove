@@ -2,7 +2,7 @@
 theme: ./
 ---
 
-# Slidev Theme Starter
+# Slidev Theme **Starter**
 
 Presentation slides for developers
 
@@ -69,6 +69,16 @@ function updateUser(id: number, update: Partial<User>) {
   saveUser(id, newUser)
 }
 ```
+
+---
+layout: center
+---
+
+| Table                  | Chair   | Tablecloth   |
+| ---------------------- | ------- | ------------ |
+| Wood                 | Wood  | Table runner |
+| Plastic                | Plastic | Paper        |
+| Wood with metal legs | Metal   | None         |
 
 ---
 layout: center

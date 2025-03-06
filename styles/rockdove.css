@@ -1,42 +1,105 @@
 :root {
-    /* https://coolors.co/2c6b72-2d3142-ef8354-f2dc5d-70ae6e-009ddc-6761a8 */
-    --color-ming: #2c6b72;
-    --color-space-cadet: #2d3142;
-    --color-mandarin: #ef8354;
-    --color-minion-yellow: #f2dc5d;
-    --color-bud-green: #70ae6e;
-    --color-carolina-blue: #009ddc;
-    --color-dark-blue-gray: #6761a8;
+  /* https://coolors.co/2c6b72-2d3142-ef8354-f2dc5d-70ae6e-009ddc-6761a8 */
+  --color-ming: #2c6b72;
+  --color-space-cadet: #2d3142;
+  --color-mandarin: #ef8354;
+  --color-minion-yellow: #f2dc5d;
+  --color-bud-green: #70ae6e;
+  --color-carolina-blue: #009ddc;
+  --color-dark-blue-gray: #6761a8;
 
-    --color-heading: var(--color-ming);
+  --color-heading: var(--color-ming);
+  --color-background: white;
+  --color-text: black;
+  --color-faint: var(--color-ming);
+
+  --font-family-header: theme("fontFamily.serif");
+  --font-family-header-highlight:
+    theme("fontFamily.serif") Highlight, theme("fontFamily.serif");
+  /* --slidev-code-font-family */
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    color: var(--color-heading);
-    font-family: var(--font-header);
-    letter-spacing: unset;
-    font-weight: 500;
+.slidev-layout.invert {
+  --un-invert: ;
 
-    & strong,
-    &:has(small) {
-        font-family: var(--font-header-highlight);
-        color: var(--color-highlight-heading);
-    }
+  --color-heading: var(--color-mandarin);
+  --color-text: white;
+  --color-background: var(--color-ming);
+  --color-faint: var(--color-mandarin);
+}
 
-    & small {
-        font-weight: normal;
-        font-size: 0.95rem;
-        display: block;
-        color: var(--color-foreground);
-        line-height: 0em;
-        font-family: var(--font-body);
-        position: relative;
-        z-index: 1;
-        margin-left: -0.5em;
+.slidev-layout {
+  background-color: var(--color-background);
+  color: var(--color-text);
+
+  &.invert {
+    &.cover,
+    &.intro {
+      h1 + p {
+        opacity: 0.9;
+      }
     }
+  }
+}
+
+.slidev-layout h1,
+.slidev-layout h2,
+.slidev-layout h3,
+.slidev-layout h4,
+.slidev-layout h5,
+.slidev-layout h6 {
+  color: var(--color-heading);
+  /* font-family: var(--font-header); */
+
+  @apply font-serif;
+
+  letter-spacing: unset;
+  font-weight: 500;
+
+  & strong,
+  &:has(small) {
+    @apply font-custom;
+
+    color: var(--color-highlight-heading);
+    font-family: var(--font-family-header-highlight);
+  }
+
+  & small {
+    font-weight: normal;
+    font-size: 0.95rem;
+    display: block;
+    color: var(--color-foreground);
+    line-height: 0em;
+
+    @apply font-sans;
+
+    position: relative;
+    z-index: 1;
+    margin-left: -0.5em;
+  }
+}
+
+.slidev-layout {
+  th {
+    font-weight: bold;
+  }
+
+  .rough-annotation {
+    mix-blend-mode: multiply;
+  }
+
+  img + .rough-annotation {
+    mix-blend-mode: unset;
+  }
+}
+
+footer {
+  font-size: 0.75rem;
+  color: var(--color-faint);
+  /* For slides with backgrounds */
+  mix-blend-mode: multiply;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
 }

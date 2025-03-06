@@ -30,8 +30,11 @@
     "highlighter": "all",
     "defaults": {
       "fonts": {
-        "sans": "Nunito Sans",
-        "mono": "Fira Code"
+        "sans": "Atkinson Hyperlegible",
+        "serif": "Zilla Slab",
+        "custom": "Zilla Slab Highlight",
+        "mono": "Inconsolata",
+        "weights": "200,300,400,500,600"
       }
     }
   }
