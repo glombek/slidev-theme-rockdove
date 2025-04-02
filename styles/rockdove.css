@@ -103,3 +103,44 @@ footer {
   right: 0;
   left: 0;
 }
+
+.slidev-layout.icon-bullets {
+  ul {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    list-style: none;
+    li {
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      .slidev-icon {
+        color: var(--icon-color);
+        width: 100%;
+        flex: 1 0 100%;
+        font-size: 2.5em;
+      }
+
+      &:nth-child(6n + 1) {
+        --icon-color: var(--color-ming);
+      }
+      &:nth-child(6n + 2) {
+        --icon-color: var(--color-mandarin);
+      }
+      &:nth-child(6n + 3) {
+        --icon-color: var(--color-bud-green);
+      }
+      &:nth-child(6n + 4) {
+        --icon-color: var(--color-carolina-blue);
+      }
+      &:nth-child(6n + 5) {
+        --icon-color: var(--color-dark-blue-gray);
+      }
+      &:nth-child(6n + 6) {
+        --icon-color: var(--color-minion-yellow);
+      }
+    }
+  }
+}
