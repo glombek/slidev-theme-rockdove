@@ -88,3 +88,27 @@ class: "text-center"
 # Learn More
 
 [Documentations](https://sli.dev) / [GitHub Repo](https://github.com/slidevjs/slidev)
+
+---
+layout: icon-bullets
+---
+
+- <logos-mercurial /> Mercurial
+- <logos-subversion /> Subversion
+- <logos-visual-studio /> Team Foundation Version Control
+- <logos-git /> Git
+
+---
+layout: icon-bullets
+---
+
+<v-clicks>
+
+- <solar-box-bold-duotone /> Backup
+- <solar-archive-up-bold-duotone /> Versioning
+- <solar-hand-stars-bold-duotone /> Sharability
+- <solar-rocket-2-bold-duotone /> Release management
+- <solar-star-fall-bold-duotone /> Feature development
+- <solar-recive-twice-square-bold-duotone /> Concurrent working
+
+</v-clicks>

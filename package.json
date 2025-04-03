@@ -19,7 +19,9 @@
   "dependencies": {
     "@slidev/types": "^0.48.0-beta.22",
     "codemirror-theme-vars": "^0.1.2",
-    "prism-theme-vars": "^0.2.4"
+    "prism-theme-vars": "^0.2.4",
+    "@iconify-json/logos": "^1.0.0",
+    "@iconify-json/solar": "^1.0.0"
   },
   "devDependencies": {
     "@slidev/cli": "^0.48.0-beta.22"
