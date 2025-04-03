@@ -15,7 +15,9 @@
 
   --font-family-header: theme("fontFamily.serif");
   --font-family-header-highlight:
-    theme("fontFamily.serif") Highlight, theme("fontFamily.serif");
+    Zilla Slab Highlight, theme("fontFamily.serif");
+  --font-family-body: theme("fontFamily.sans");
+  --font-family-code: var(--slidev-code-font-family);
   /* --slidev-code-font-family */
 }
 
@@ -49,19 +51,18 @@
 .slidev-layout h5,
 .slidev-layout h6 {
   color: var(--color-heading);
-  /* font-family: var(--font-header); */
+  font-family: var(--font-family-header);
 
-  @apply font-serif;
 
   letter-spacing: unset;
   font-weight: 500;
 
   & strong,
   &:has(small) {
-    @apply font-custom;
 
     color: var(--color-highlight-heading);
     font-family: var(--font-family-header-highlight);
+    font-weight: 500;
   }
 
   & small {
@@ -70,8 +71,8 @@
     display: block;
     color: var(--color-foreground);
     line-height: 0em;
-
-    @apply font-sans;
+    font-family: var(--font-family-body);
+    font-weight: 500;
 
     position: relative;
     z-index: 1;
