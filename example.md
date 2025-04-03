@@ -93,14 +93,24 @@ class: "text-center"
 layout: icon-bullets
 ---
 
+<style scoped>
+  * {
+    --icon-bullets-columns: 3;
+  }
+</style>
+
+# h1
+
 - <logos-mercurial /> Mercurial
 - <logos-subversion /> Subversion
 - <logos-visual-studio /> Team Foundation Version Control
 - <logos-git /> Git
-
 ---
 layout: icon-bullets
 ---
+
+# With a heading
+And icons that reveal on-click.
 
 <v-clicks>
 
@@ -108,7 +118,5 @@ layout: icon-bullets
 - <solar-archive-up-bold-duotone /> Versioning
 - <solar-hand-stars-bold-duotone /> Sharability
 - <solar-rocket-2-bold-duotone /> Release management
-- <solar-star-fall-bold-duotone /> Feature development
-- <solar-recive-twice-square-bold-duotone /> Concurrent working
 
 </v-clicks>
