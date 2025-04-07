@@ -90,27 +90,36 @@ class: "text-center"
 [Documentations](https://sli.dev) / [GitHub Repo](https://github.com/slidevjs/slidev)
 
 ---
-layout: icon-bullets
+layout: icons
+cols: 4
 ---
 
-<style scoped>
-  * {
-    --icon-bullets-columns: 3;
-  }
-</style>
+- <logos-mercurial />
+  **Mercurial**
+  hg, if you will
+- <logos-subversion />
+  **Subversion**
+  **Sub**par or just an older **version**?
+- <logos-visual-studio />
+  **Team Foundation Version Control**
+  if thats even what they're still calling it!
+- <logos-git-icon />
+  **Git**
+  The norm, really
+- <logos-mercurial /> **Mercurial**
+- <logos-subversion /> **Subversion**
+- <logos-visual-studio /> **Team Foundation Version Control**
+- <logos-git-icon /> **Git**
 
-# h1
-
-- <logos-mercurial /> Mercurial
-- <logos-subversion /> Subversion
-- <logos-visual-studio /> Team Foundation Version Control
-- <logos-git /> Git
 ---
-layout: icon-bullets
+layout: icons-header
+cols: 4
 ---
 
 # With a heading
 And icons that reveal on-click.
+
+::icons::
 
 <v-clicks>
 
