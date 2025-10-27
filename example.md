@@ -2,7 +2,7 @@
 theme: ./
 ---
 
-# Slidev Theme **Starter**
+# Slidev Theme **Rockdove**
 
 Presentation slides for developers
 
@@ -11,6 +11,18 @@ Presentation slides for developers
     Press Space for next page <carbon:arrow-right class="inline"/>
   </span>
 </div>
+
+---
+layout: bio
+image: /unicorn.png
+tagline: Senior Developer at Bump Digital
+---
+
+Speaker of talks
+
+- <logos-mastodon-icon /> [@joe@umbraco&#8239;community.social](https://umbracocommunity.social/joe)
+- <logos-bluesky />  [@joe.gl](https://bsky.app/profile/joe.gl)
+- <solar-global-bold-duotone /> https://joe.gl/ombek
 
 ---
 
@@ -79,15 +91,6 @@ layout: center
 | Wood                 | Wood  | Table runner |
 | Plastic                | Plastic | Paper        |
 | Wood with metal legs | Metal   | None         |
-
----
-layout: center
-class: "text-center"
----
-
-# Learn More
-
-[Documentations](https://sli.dev) / [GitHub Repo](https://github.com/slidevjs/slidev)
 
 ---
 layout: icons
