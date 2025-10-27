@@ -78,6 +78,10 @@ const imageSrc = computed(() => resolveAssetUrl(props.image));
 
             > li {
                 margin: 0;
+
+                .slidev-icon {
+                    color: var(--icon-color);
+                }
             }
         }
     }

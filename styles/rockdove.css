@@ -103,6 +103,28 @@ footer {
   left: 0;
 }
 
+/* Set icon colour variable for all lists, only used where necessary */
+li {
+  &:nth-child(6n + 1) {
+    --icon-color: var(--color-ming);
+  }
+  &:nth-child(6n + 2) {
+    --icon-color: var(--color-mandarin);
+  }
+  &:nth-child(6n + 3) {
+    --icon-color: var(--color-bud-green);
+  }
+  &:nth-child(6n + 4) {
+    --icon-color: var(--color-carolina-blue);
+  }
+  &:nth-child(6n + 5) {
+    --icon-color: var(--color-dark-blue-gray);
+  }
+  &:nth-child(6n + 6) {
+    --icon-color: var(--color-minion-yellow);
+  }
+}
+
 .slidev-layout.icons {
   display: flex;
   flex-direction: column;
@@ -160,26 +182,53 @@ footer {
           display: block;
           margin: 0 auto 0.5em auto;
         }
-
-        &:nth-child(6n + 1) {
-          --icon-color: var(--color-ming);
-        }
-        &:nth-child(6n + 2) {
-          --icon-color: var(--color-mandarin);
-        }
-        &:nth-child(6n + 3) {
-          --icon-color: var(--color-bud-green);
-        }
-        &:nth-child(6n + 4) {
-          --icon-color: var(--color-carolina-blue);
-        }
-        &:nth-child(6n + 5) {
-          --icon-color: var(--color-dark-blue-gray);
-        }
-        &:nth-child(6n + 6) {
-          --icon-color: var(--color-minion-yellow);
-        }
       }
     }
   }
 }
+
+
+  /* Colour the intro slides */
+  :nth-child(7n + 1 of .slidev-page:has(.slidev-layout.intro)) {
+    .slidev-layout {
+      --color-background: var(--color-ming);
+      --color-heading: var(--color-mandarin);
+    }
+  }
+  :nth-child(7n + 2 of .slidev-page:has(.slidev-layout.intro)) {
+    .slidev-layout {
+      --color-background: var(--color-space-cadet);
+      --color-heading: var(--color-mandarin);
+      --color-text: white;
+    }
+  }
+  :nth-child(7n + 3 of .slidev-page:has(.slidev-layout.intro)) {
+    .slidev-layout {
+      --color-background: var(--color-mandarin);
+      --color-heading: var(--color-space-cadet);
+    }
+  }
+  :nth-child(7n + 4 of .slidev-page:has(.slidev-layout.intro)) {
+    .slidev-layout {
+      --color-background: var(--color-minion-yellow);
+      --color-heading: var(--color-dark-blue-gray);
+    }
+  }
+  :nth-child(7n + 5 of .slidev-page:has(.slidev-layout.intro)) {
+    .slidev-layout {
+      --color-background: var(--color-bud-green);
+      --color-heading: var(--color-minion-yellow);
+    }
+  }
+  :nth-child(7n + 6 of .slidev-page:has(.slidev-layout.intro)) {
+    .slidev-layout {
+      --color-background: var(--color-carolina-blue);
+      --color-heading: var(--color-space-cadet);
+    }
+  }
+  :nth-child(7n + 7 of .slidev-page:has(.slidev-layout.intro)) {
+    .slidev-layout {
+      --color-background: var(--color-dark-blue-gray);
+      --color-heading: var(--color-minion-yellow);
+    }
+  }
