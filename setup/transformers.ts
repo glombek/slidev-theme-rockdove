@@ -13,9 +13,9 @@ function myAutoLinks(ctx: MarkdownTransformContext) {
 
 function multiLineBullets(ctx: MarkdownTransformContext) {
   ctx.s.replace(
-    /(?:- .*?)*(?:(?:\n[^\S\r\n]+[^\S\r\n-]).*)+/g,
+    /(?:- .*?)+(?:(?:\n[^\S\r\n]+[^\S\r\n-]).*)+/g,
     (match) => {
-      return match.replace(/\n\s+/g, '<br />')
+      return match.replace(/(?<=\S)\n[^\S\r\n]+(?=\S)/g, '<br />')
     }
   )
 }

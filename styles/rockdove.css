@@ -188,47 +188,47 @@ li {
 }
 
 
-  /* Colour the intro slides */
-  :nth-child(7n + 1 of .slidev-page:has(.slidev-layout.intro)) {
-    .slidev-layout {
-      --color-background: var(--color-ming);
-      --color-heading: var(--color-mandarin);
-    }
+/* Colour the intro slides */
+:nth-child(7n + 1 of .slidev-page:has(.slidev-layout.intro)) {
+  .slidev-layout {
+    --color-background: var(--color-ming);
+    --color-heading: var(--color-mandarin);
   }
-  :nth-child(7n + 2 of .slidev-page:has(.slidev-layout.intro)) {
-    .slidev-layout {
-      --color-background: var(--color-space-cadet);
-      --color-heading: var(--color-mandarin);
-      --color-text: white;
-    }
+}
+:nth-child(7n + 2 of .slidev-page:has(.slidev-layout.intro)) {
+  .slidev-layout {
+    --color-background: var(--color-space-cadet);
+    --color-heading: var(--color-mandarin);
+    --color-text: white;
   }
-  :nth-child(7n + 3 of .slidev-page:has(.slidev-layout.intro)) {
-    .slidev-layout {
-      --color-background: var(--color-mandarin);
-      --color-heading: var(--color-space-cadet);
-    }
+}
+:nth-child(7n + 3 of .slidev-page:has(.slidev-layout.intro)) {
+  .slidev-layout {
+    --color-background: var(--color-mandarin);
+    --color-heading: var(--color-space-cadet);
   }
-  :nth-child(7n + 4 of .slidev-page:has(.slidev-layout.intro)) {
-    .slidev-layout {
-      --color-background: var(--color-minion-yellow);
-      --color-heading: var(--color-dark-blue-gray);
-    }
+}
+:nth-child(7n + 4 of .slidev-page:has(.slidev-layout.intro)) {
+  .slidev-layout {
+    --color-background: var(--color-minion-yellow);
+    --color-heading: var(--color-dark-blue-gray);
   }
-  :nth-child(7n + 5 of .slidev-page:has(.slidev-layout.intro)) {
-    .slidev-layout {
-      --color-background: var(--color-bud-green);
-      --color-heading: var(--color-minion-yellow);
-    }
+}
+:nth-child(7n + 5 of .slidev-page:has(.slidev-layout.intro)) {
+  .slidev-layout {
+    --color-background: var(--color-bud-green);
+    --color-heading: var(--color-minion-yellow);
   }
-  :nth-child(7n + 6 of .slidev-page:has(.slidev-layout.intro)) {
-    .slidev-layout {
-      --color-background: var(--color-carolina-blue);
-      --color-heading: var(--color-space-cadet);
-    }
+}
+:nth-child(7n + 6 of .slidev-page:has(.slidev-layout.intro)) {
+  .slidev-layout {
+    --color-background: var(--color-carolina-blue);
+    --color-heading: var(--color-space-cadet);
   }
-  :nth-child(7n + 7 of .slidev-page:has(.slidev-layout.intro)) {
-    .slidev-layout {
-      --color-background: var(--color-dark-blue-gray);
-      --color-heading: var(--color-minion-yellow);
-    }
+}
+:nth-child(7n + 7 of .slidev-page:has(.slidev-layout.intro)) {
+  .slidev-layout {
+    --color-background: var(--color-dark-blue-gray);
+    --color-heading: var(--color-minion-yellow);
   }
+}

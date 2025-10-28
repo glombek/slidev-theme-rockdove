@@ -31,10 +31,15 @@ Speaker of talks
 Slidev is a slides maker and presenter designed for developers, consist of the following features
 
 - 📝 **Text-based** - focus on the content with Markdown, and then style them later
-  Including multi-line bullet points!
-  Even a *third* line
+
+  Paragraphs in bullets (standard)
 - 🎨 **Themable** - theme can be shared and used with npm packages
+  Multi-line bullets (custom)
 - 🧑‍💻 **Developer Friendly** - code highlighting, live coding with autocompletion
+  Multiline...
+
+  As well as multiline
+  paragraphs!
 - 🤹 **Interactive** - embedding Vue components to enhance your expressions
 - 🎥 **Recording** - built-in recording and camera view
 - 📤 **Portable** - export into PDF, PNGs, or even a hostable SPA
