@@ -22,3 +22,59 @@
     @apply mt-10;
   }
 }
+
+.slidev-layout.quote {
+  @apply grid h-full place-content-center;
+
+  blockquote.big-quote {
+    @apply text-4xl italic font-serif;
+
+    background: transparent;
+    border: none;
+
+    display: inline-block;
+    position: relative;
+
+    &::before {
+      content: "“";
+      @apply text-7xl mr-2 font-sans;
+      position: absolute;
+      left: -0.4em;
+      top: 0em;
+      color: var(--slidev-theme-primary);
+    }
+
+    &::after {
+      content: "”";
+      @apply text-7xl ml-2 font-sans;
+      position: absolute;
+      right: -0.25em;
+      bottom: -0.11em;
+      color: var(--slidev-theme-primary);
+    }
+
+    > p {
+      /* Reset margins to defaults */
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+  }
+
+  cite.big-quote-cite {
+    @apply text-right text-xl font-sans;
+    color: var(--slidev-theme-primary);
+    position: absolute;
+    top: 100%;
+    right: -0.8em;
+    font-style: normal;
+
+    > p:first-child {
+      &::before {
+        content: "— ";
+        opacity: 0.5;
+      }
+
+      margin-top: 0;
+    }
+  }
+}

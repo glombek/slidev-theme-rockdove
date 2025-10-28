@@ -90,6 +90,33 @@ function updateUser(id: number, update: Partial<User>) {
 ```
 
 ---
+layout: quote
+---
+
+Hello world
+
+::cite::
+
+Some guy
+
+---
+layout: quote
+---
+
+The answer to life,
+
+the universe
+
+and everything is...
+
+42
+
+::cite::
+
+Deep Thought
+
+
+---
 layout: center
 ---
 
