@@ -57,6 +57,7 @@
       /* Reset margins to defaults */
       margin-top: 1rem;
       margin-bottom: 1rem;
+      line-height: inherit;
     }
   }
 
