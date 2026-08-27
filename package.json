@@ -37,7 +37,7 @@
         "custom": "Zilla Slab Highlight",
         "mono": "Inconsolata",
         "weights": "200,300,400,500,600,700",
-        "provider": "coollabs"
+        "provider": "google"
       }
     }
   }
