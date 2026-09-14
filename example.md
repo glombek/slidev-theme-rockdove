@@ -166,3 +166,35 @@ And icons that reveal on-click.
 - <solar-rocket-2-bold-duotone /> Release management
 
 </v-clicks>
+
+---
+layout: two-cols
+---
+
+```
+Left
+```
+
+::right::
+
+```
+Right
+```
+
+---
+layout: two-cols-header
+---
+
+# Header
+
+::left::
+
+```
+Left
+```
+
+::right::
+
+```
+Right
+```

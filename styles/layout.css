@@ -79,3 +79,10 @@
     }
   }
 }
+
+/* Built-in two-column layouts sit flush against each other by default.
+   `two-cols` renders as `.two-columns`, `two-cols-header` as `.two-cols-header`. */
+.slidev-layout.two-cols-header,
+.slidev-layout.two-columns {
+  gap: 0 1em;
+}
