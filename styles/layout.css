@@ -86,3 +86,18 @@
 .slidev-layout.two-columns {
   gap: 0 1em;
 }
+
+/* Their columns are `1fr`, which won't shrink below the widest content, so one long
+   line of code pushes a column off the slide. Let the columns shrink instead. */
+.slidev-layout.two-cols-header > *,
+.slidev-layout.two-columns > * {
+  min-width: 0;
+}
+
+/* Wrap long code lines rather than clipping or scrolling them, which hides code from
+   the audience. Magic-move blocks are skipped: they position each token themselves. */
+.slidev-layout .slidev-code-wrapper:not(.slidev-code-magic-move) pre.slidev-code,
+.slidev-layout .slidev-code-wrapper:not(.slidev-code-magic-move) pre.slidev-code > code {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
