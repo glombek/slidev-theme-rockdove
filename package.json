@@ -21,11 +21,12 @@
     "screenshot": "slidev export example.md --format png"
   },
   "dependencies": {
+    "@iconify-json/logos": "^1.2.9",
+    "@iconify-json/solar": "^1.2.4",
+    "@iconify-json/vscode-icons": "1.2.77",
     "@slidev/types": "^52.6.0",
     "codemirror-theme-vars": "^0.1.2",
-    "prism-theme-vars": "^0.2.5",
-    "@iconify-json/logos": "^1.2.9",
-    "@iconify-json/solar": "^1.2.4"
+    "prism-theme-vars": "^0.2.5"
   },
   "devDependencies": {
     "@slidev/cli": "^52.6.0"
