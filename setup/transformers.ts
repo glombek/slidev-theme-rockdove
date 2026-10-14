@@ -3,7 +3,8 @@ import { defineTransformersSetup } from '@slidev/types'
 
 function myAutoLinks(ctx: MarkdownTransformContext) {
   ctx.s.replace(
-    /(^|[^\("])(https?:\/\/([^\s]+[\w])\/?)/gm,
+    // `{` ends a URL so an attribute block after it, like https://example.com{qr=br}, stays outside the link
+    /(^|[^\("])(https?:\/\/([^\s{]+[\w])\/?)/gm,
     (match, prefix, url, display) => {
       //console.log(match, prefix, url, display);
       return `${prefix}[${display}](${url})`

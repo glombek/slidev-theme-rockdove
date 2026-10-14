@@ -1,5 +1,7 @@
 ---
 theme: ./
+# needed for {qr} link attributes
+mdc: true
 ---
 
 # Slidev Theme **Rockdove**
@@ -198,3 +200,20 @@ Left
 ```
 Right
 ```
+---
+
+# QR code links
+
+Needs `mdc: true`. Add `{qr}` after a link:
+
+- Inline: [joe.gl/ombek](https://joe.gl/ombek){qr}
+- Block, below the link: [joe.gl/ombek](https://joe.gl/ombek){qr=block}
+- Pinned to a corner (`tl`, `tr`, `bl`, `br`): [joe.gl/ombek](https://joe.gl/ombek){qr.br}
+
+---
+layout: bio
+image: /unicorn.png
+tagline: Senior Developer at Bump Digital
+---
+
+- [joe.gl/ombek](https://joe.gl/ombek){qr=block qr-size=180}
